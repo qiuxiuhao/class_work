@@ -1,0 +1,2630 @@
+[
+  {
+    "room_id": "R001",
+    "room_name": "教三101",
+    "building": "教学三楼",
+    "capacity": 38,
+    "facilities": [
+      "网络",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R002",
+    "room_name": "教三102",
+    "building": "教学三楼",
+    "capacity": 58,
+    "facilities": [
+      "电脑",
+      "投影仪",
+      "白板",
+      "网络",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R003",
+    "room_name": "教三103",
+    "building": "教学三楼",
+    "capacity": 56,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "音响",
+      "白板",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R004",
+    "room_name": "教三104",
+    "building": "教学三楼",
+    "capacity": 58,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R005",
+    "room_name": "教三105",
+    "building": "教学三楼",
+    "capacity": 32,
+    "facilities": [
+      "空调",
+      "网络",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R006",
+    "room_name": "教三106",
+    "building": "教学三楼",
+    "capacity": 48,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "电脑",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R007",
+    "room_name": "教三107",
+    "building": "教学三楼",
+    "capacity": 30,
+    "facilities": [
+      "网络",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R008",
+    "room_name": "教三108",
+    "building": "教学三楼",
+    "capacity": 54,
+    "facilities": [
+      "电脑",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R009",
+    "room_name": "教三109",
+    "building": "教学三楼",
+    "capacity": 49,
+    "facilities": [
+      "白板",
+      "电脑",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R010",
+    "room_name": "教三110",
+    "building": "教学三楼",
+    "capacity": 38,
+    "facilities": [
+      "电脑",
+      "音响",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R011",
+    "room_name": "教三201",
+    "building": "教学三楼",
+    "capacity": 51,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "电脑",
+      "空调",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R012",
+    "room_name": "教三202",
+    "building": "教学三楼",
+    "capacity": 52,
+    "facilities": [
+      "空调",
+      "音响",
+      "网络",
+      "白板",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R013",
+    "room_name": "教三203",
+    "building": "教学三楼",
+    "capacity": 48,
+    "facilities": [
+      "空调",
+      "白板",
+      "投影仪",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R014",
+    "room_name": "教三204",
+    "building": "教学三楼",
+    "capacity": 47,
+    "facilities": [
+      "空调",
+      "电脑",
+      "白板",
+      "音响",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R015",
+    "room_name": "教三205",
+    "building": "教学三楼",
+    "capacity": 51,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R016",
+    "room_name": "教三206",
+    "building": "教学三楼",
+    "capacity": 33,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "白板",
+      "电脑",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R017",
+    "room_name": "教三207",
+    "building": "教学三楼",
+    "capacity": 44,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "白板",
+      "音响",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R018",
+    "room_name": "教三208",
+    "building": "教学三楼",
+    "capacity": 47,
+    "facilities": [
+      "网络",
+      "空调",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R019",
+    "room_name": "教三209",
+    "building": "教学三楼",
+    "capacity": 31,
+    "facilities": [
+      "白板",
+      "网络",
+      "投影仪",
+      "电脑",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R020",
+    "room_name": "教三210",
+    "building": "教学三楼",
+    "capacity": 35,
+    "facilities": [
+      "电脑",
+      "网络",
+      "空调",
+      "音响",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R021",
+    "room_name": "教三301",
+    "building": "教学三楼",
+    "capacity": 102,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "网络",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R022",
+    "room_name": "教三302",
+    "building": "教学三楼",
+    "capacity": 81,
+    "facilities": [
+      "空调",
+      "网络",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R023",
+    "room_name": "教三303",
+    "building": "教学三楼",
+    "capacity": 106,
+    "facilities": [
+      "电脑",
+      "白板",
+      "投影仪",
+      "网络",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R024",
+    "room_name": "教三304",
+    "building": "教学三楼",
+    "capacity": 92,
+    "facilities": [
+      "电脑",
+      "空调",
+      "投影仪",
+      "音响",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R025",
+    "room_name": "教三305",
+    "building": "教学三楼",
+    "capacity": 97,
+    "facilities": [
+      "电脑",
+      "空调",
+      "白板",
+      "投影仪",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R026",
+    "room_name": "教三306",
+    "building": "教学三楼",
+    "capacity": 86,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R027",
+    "room_name": "教三307",
+    "building": "教学三楼",
+    "capacity": 84,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "音响",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R028",
+    "room_name": "教三308",
+    "building": "教学三楼",
+    "capacity": 97,
+    "facilities": [
+      "空调",
+      "网络",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R029",
+    "room_name": "教三309",
+    "building": "教学三楼",
+    "capacity": 89,
+    "facilities": [
+      "音响",
+      "网络",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R030",
+    "room_name": "教三310",
+    "building": "教学三楼",
+    "capacity": 111,
+    "facilities": [
+      "网络",
+      "空调",
+      "白板",
+      "电脑",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R031",
+    "room_name": "教三401",
+    "building": "教学三楼",
+    "capacity": 86,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R032",
+    "room_name": "教三402",
+    "building": "教学三楼",
+    "capacity": 84,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R033",
+    "room_name": "教三403",
+    "building": "教学三楼",
+    "capacity": 102,
+    "facilities": [
+      "白板",
+      "音响",
+      "电脑",
+      "网络",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R034",
+    "room_name": "教三404",
+    "building": "教学三楼",
+    "capacity": 115,
+    "facilities": [
+      "空调",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R035",
+    "room_name": "教三405",
+    "building": "教学三楼",
+    "capacity": 106,
+    "facilities": [
+      "电脑",
+      "投影仪",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R036",
+    "room_name": "教三406",
+    "building": "教学三楼",
+    "capacity": 97,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R037",
+    "room_name": "教三407",
+    "building": "教学三楼",
+    "capacity": 82,
+    "facilities": [
+      "电脑",
+      "音响",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R038",
+    "room_name": "教三408",
+    "building": "教学三楼",
+    "capacity": 111,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R039",
+    "room_name": "教三409",
+    "building": "教学三楼",
+    "capacity": 100,
+    "facilities": [
+      "网络",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R040",
+    "room_name": "教三410",
+    "building": "教学三楼",
+    "capacity": 111,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "网络",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R041",
+    "room_name": "教三501",
+    "building": "教学三楼",
+    "capacity": 183,
+    "facilities": [
+      "电脑",
+      "音响",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R042",
+    "room_name": "教三502",
+    "building": "教学三楼",
+    "capacity": 194,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "白板",
+      "电脑",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R043",
+    "room_name": "教三503",
+    "building": "教学三楼",
+    "capacity": 179,
+    "facilities": [
+      "音响",
+      "电脑",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R044",
+    "room_name": "教三504",
+    "building": "教学三楼",
+    "capacity": 169,
+    "facilities": [
+      "白板",
+      "空调",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R045",
+    "room_name": "教三505",
+    "building": "教学三楼",
+    "capacity": 164,
+    "facilities": [
+      "网络",
+      "电脑",
+      "音响",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R046",
+    "room_name": "教三506",
+    "building": "教学三楼",
+    "capacity": 182,
+    "facilities": [
+      "音响",
+      "空调",
+      "电脑",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R047",
+    "room_name": "教三507",
+    "building": "教学三楼",
+    "capacity": 156,
+    "facilities": [
+      "网络",
+      "电脑",
+      "音响",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R048",
+    "room_name": "教三508",
+    "building": "教学三楼",
+    "capacity": 200,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "网络",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R049",
+    "room_name": "教三509",
+    "building": "教学三楼",
+    "capacity": 153,
+    "facilities": [
+      "白板",
+      "网络",
+      "投影仪",
+      "电脑",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R050",
+    "room_name": "教三510",
+    "building": "教学三楼",
+    "capacity": 151,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "网络",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R051",
+    "room_name": "教四101",
+    "building": "教学四楼",
+    "capacity": 52,
+    "facilities": [
+      "白板",
+      "空调",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R052",
+    "room_name": "教四102",
+    "building": "教学四楼",
+    "capacity": 38,
+    "facilities": [
+      "音响",
+      "电脑",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R053",
+    "room_name": "教四103",
+    "building": "教学四楼",
+    "capacity": 58,
+    "facilities": [
+      "空调",
+      "网络",
+      "白板",
+      "投影仪",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R054",
+    "room_name": "教四104",
+    "building": "教学四楼",
+    "capacity": 38,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R055",
+    "room_name": "教四105",
+    "building": "教学四楼",
+    "capacity": 32,
+    "facilities": [
+      "空调",
+      "白板",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R056",
+    "room_name": "教四106",
+    "building": "教学四楼",
+    "capacity": 59,
+    "facilities": [
+      "空调",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R057",
+    "room_name": "教四107",
+    "building": "教学四楼",
+    "capacity": 48,
+    "facilities": [
+      "音响",
+      "网络",
+      "空调",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R058",
+    "room_name": "教四108",
+    "building": "教学四楼",
+    "capacity": 54,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "空调",
+      "网络",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R059",
+    "room_name": "教四109",
+    "building": "教学四楼",
+    "capacity": 40,
+    "facilities": [
+      "空调",
+      "音响",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R060",
+    "room_name": "教四110",
+    "building": "教学四楼",
+    "capacity": 38,
+    "facilities": [
+      "音响",
+      "网络",
+      "白板",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R061",
+    "room_name": "教四111",
+    "building": "教学四楼",
+    "capacity": 59,
+    "facilities": [
+      "音响",
+      "空调",
+      "网络",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R062",
+    "room_name": "教四112",
+    "building": "教学四楼",
+    "capacity": 40,
+    "facilities": [
+      "空调",
+      "电脑",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R063",
+    "room_name": "教四201",
+    "building": "教学四楼",
+    "capacity": 60,
+    "facilities": [
+      "网络",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R064",
+    "room_name": "教四202",
+    "building": "教学四楼",
+    "capacity": 46,
+    "facilities": [
+      "网络",
+      "空调",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R065",
+    "room_name": "教四203",
+    "building": "教学四楼",
+    "capacity": 39,
+    "facilities": [
+      "音响",
+      "空调",
+      "网络",
+      "电脑",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R066",
+    "room_name": "教四204",
+    "building": "教学四楼",
+    "capacity": 42,
+    "facilities": [
+      "投影仪",
+      "网络",
+      "电脑",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R067",
+    "room_name": "教四205",
+    "building": "教学四楼",
+    "capacity": 48,
+    "facilities": [
+      "电脑",
+      "白板",
+      "音响",
+      "空调",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R068",
+    "room_name": "教四206",
+    "building": "教学四楼",
+    "capacity": 46,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "音响",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R069",
+    "room_name": "教四207",
+    "building": "教学四楼",
+    "capacity": 37,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "电脑",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R070",
+    "room_name": "教四208",
+    "building": "教学四楼",
+    "capacity": 35,
+    "facilities": [
+      "空调",
+      "投影仪",
+      "白板",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R071",
+    "room_name": "教四209",
+    "building": "教学四楼",
+    "capacity": 38,
+    "facilities": [
+      "电脑",
+      "网络",
+      "白板",
+      "投影仪",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R072",
+    "room_name": "教四210",
+    "building": "教学四楼",
+    "capacity": 34,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "电脑",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R073",
+    "room_name": "教四211",
+    "building": "教学四楼",
+    "capacity": 60,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "空调",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R074",
+    "room_name": "教四212",
+    "building": "教学四楼",
+    "capacity": 37,
+    "facilities": [
+      "音响",
+      "网络",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R075",
+    "room_name": "教四301",
+    "building": "教学四楼",
+    "capacity": 81,
+    "facilities": [
+      "电脑",
+      "网络",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R076",
+    "room_name": "教四302",
+    "building": "教学四楼",
+    "capacity": 104,
+    "facilities": [
+      "空调",
+      "投影仪",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R077",
+    "room_name": "教四303",
+    "building": "教学四楼",
+    "capacity": 98,
+    "facilities": [
+      "白板",
+      "音响",
+      "电脑",
+      "空调",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R078",
+    "room_name": "教四304",
+    "building": "教学四楼",
+    "capacity": 86,
+    "facilities": [
+      "网络",
+      "电脑",
+      "投影仪",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R079",
+    "room_name": "教四305",
+    "building": "教学四楼",
+    "capacity": 111,
+    "facilities": [
+      "电脑",
+      "白板",
+      "空调",
+      "网络",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R080",
+    "room_name": "教四306",
+    "building": "教学四楼",
+    "capacity": 83,
+    "facilities": [
+      "白板",
+      "网络",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R081",
+    "room_name": "教四307",
+    "building": "教学四楼",
+    "capacity": 83,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R082",
+    "room_name": "教四308",
+    "building": "教学四楼",
+    "capacity": 94,
+    "facilities": [
+      "网络",
+      "电脑",
+      "空调",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R083",
+    "room_name": "教四309",
+    "building": "教学四楼",
+    "capacity": 97,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "白板",
+      "电脑",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R084",
+    "room_name": "教四310",
+    "building": "教学四楼",
+    "capacity": 98,
+    "facilities": [
+      "电脑",
+      "投影仪",
+      "白板",
+      "空调",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R085",
+    "room_name": "教四311",
+    "building": "教学四楼",
+    "capacity": 113,
+    "facilities": [
+      "音响",
+      "电脑",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R086",
+    "room_name": "教四312",
+    "building": "教学四楼",
+    "capacity": 82,
+    "facilities": [
+      "音响",
+      "电脑",
+      "投影仪",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R087",
+    "room_name": "教四401",
+    "building": "教学四楼",
+    "capacity": 108,
+    "facilities": [
+      "电脑",
+      "白板",
+      "网络",
+      "音响",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R088",
+    "room_name": "教四402",
+    "building": "教学四楼",
+    "capacity": 109,
+    "facilities": [
+      "电脑",
+      "音响",
+      "白板",
+      "网络",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R089",
+    "room_name": "教四403",
+    "building": "教学四楼",
+    "capacity": 83,
+    "facilities": [
+      "网络",
+      "白板",
+      "电脑",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R090",
+    "room_name": "教四404",
+    "building": "教学四楼",
+    "capacity": 103,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "电脑",
+      "空调",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R091",
+    "room_name": "教四405",
+    "building": "教学四楼",
+    "capacity": 111,
+    "facilities": [
+      "电脑",
+      "投影仪",
+      "空调",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R092",
+    "room_name": "教四406",
+    "building": "教学四楼",
+    "capacity": 115,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "电脑",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R093",
+    "room_name": "教四407",
+    "building": "教学四楼",
+    "capacity": 82,
+    "facilities": [
+      "白板",
+      "电脑",
+      "音响",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R094",
+    "room_name": "教四408",
+    "building": "教学四楼",
+    "capacity": 117,
+    "facilities": [
+      "空调",
+      "投影仪",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R095",
+    "room_name": "教四409",
+    "building": "教学四楼",
+    "capacity": 99,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "音响",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R096",
+    "room_name": "教四410",
+    "building": "教学四楼",
+    "capacity": 90,
+    "facilities": [
+      "音响",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R097",
+    "room_name": "教四411",
+    "building": "教学四楼",
+    "capacity": 105,
+    "facilities": [
+      "空调",
+      "音响",
+      "电脑",
+      "白板",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R098",
+    "room_name": "教四412",
+    "building": "教学四楼",
+    "capacity": 83,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R099",
+    "room_name": "教四501",
+    "building": "教学四楼",
+    "capacity": 164,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "白板",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R100",
+    "room_name": "教四502",
+    "building": "教学四楼",
+    "capacity": 180,
+    "facilities": [
+      "白板",
+      "音响",
+      "电脑",
+      "投影仪",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R101",
+    "room_name": "教四503",
+    "building": "教学四楼",
+    "capacity": 159,
+    "facilities": [
+      "网络",
+      "音响",
+      "白板",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R102",
+    "room_name": "教四504",
+    "building": "教学四楼",
+    "capacity": 161,
+    "facilities": [
+      "音响",
+      "网络",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R103",
+    "room_name": "教四505",
+    "building": "教学四楼",
+    "capacity": 159,
+    "facilities": [
+      "空调",
+      "网络",
+      "音响",
+      "电脑",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R104",
+    "room_name": "教四506",
+    "building": "教学四楼",
+    "capacity": 185,
+    "facilities": [
+      "电脑",
+      "投影仪",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R105",
+    "room_name": "教四507",
+    "building": "教学四楼",
+    "capacity": 198,
+    "facilities": [
+      "空调",
+      "白板",
+      "投影仪",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R106",
+    "room_name": "教四508",
+    "building": "教学四楼",
+    "capacity": 155,
+    "facilities": [
+      "音响",
+      "电脑",
+      "网络",
+      "投影仪",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R107",
+    "room_name": "教四509",
+    "building": "教学四楼",
+    "capacity": 161,
+    "facilities": [
+      "音响",
+      "空调",
+      "网络",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R108",
+    "room_name": "教四510",
+    "building": "教学四楼",
+    "capacity": 155,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R109",
+    "room_name": "教四511",
+    "building": "教学四楼",
+    "capacity": 160,
+    "facilities": [
+      "电脑",
+      "投影仪",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R110",
+    "room_name": "教四512",
+    "building": "教学四楼",
+    "capacity": 163,
+    "facilities": [
+      "音响",
+      "白板",
+      "电脑",
+      "网络",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R111",
+    "room_name": "教四601",
+    "building": "教学四楼",
+    "capacity": 193,
+    "facilities": [
+      "音响",
+      "白板",
+      "空调",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R112",
+    "room_name": "教四602",
+    "building": "教学四楼",
+    "capacity": 182,
+    "facilities": [
+      "投影仪",
+      "电脑",
+      "空调",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R113",
+    "room_name": "教四603",
+    "building": "教学四楼",
+    "capacity": 178,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "空调",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R114",
+    "room_name": "教四604",
+    "building": "教学四楼",
+    "capacity": 200,
+    "facilities": [
+      "音响",
+      "电脑",
+      "投影仪",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R115",
+    "room_name": "教四605",
+    "building": "教学四楼",
+    "capacity": 188,
+    "facilities": [
+      "空调",
+      "音响",
+      "白板",
+      "投影仪",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R116",
+    "room_name": "教四606",
+    "building": "教学四楼",
+    "capacity": 192,
+    "facilities": [
+      "网络",
+      "音响",
+      "白板",
+      "空调",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R117",
+    "room_name": "教四607",
+    "building": "教学四楼",
+    "capacity": 199,
+    "facilities": [
+      "投影仪",
+      "电脑",
+      "空调",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R118",
+    "room_name": "教四608",
+    "building": "教学四楼",
+    "capacity": 178,
+    "facilities": [
+      "白板",
+      "音响",
+      "网络",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R119",
+    "room_name": "教四609",
+    "building": "教学四楼",
+    "capacity": 194,
+    "facilities": [
+      "音响",
+      "空调",
+      "网络",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R120",
+    "room_name": "教四610",
+    "building": "教学四楼",
+    "capacity": 180,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R121",
+    "room_name": "教四611",
+    "building": "教学四楼",
+    "capacity": 184,
+    "facilities": [
+      "音响",
+      "电脑",
+      "投影仪",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R122",
+    "room_name": "教四612",
+    "building": "教学四楼",
+    "capacity": 164,
+    "facilities": [
+      "音响",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R123",
+    "room_name": "科研101",
+    "building": "科研楼",
+    "capacity": 56,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R124",
+    "room_name": "科研102",
+    "building": "科研楼",
+    "capacity": 47,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "电脑",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R125",
+    "room_name": "科研103",
+    "building": "科研楼",
+    "capacity": 40,
+    "facilities": [
+      "空调",
+      "白板",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R126",
+    "room_name": "科研104",
+    "building": "科研楼",
+    "capacity": 45,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R127",
+    "room_name": "科研105",
+    "building": "科研楼",
+    "capacity": 58,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R128",
+    "room_name": "科研106",
+    "building": "科研楼",
+    "capacity": 35,
+    "facilities": [
+      "音响",
+      "网络",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R129",
+    "room_name": "科研107",
+    "building": "科研楼",
+    "capacity": 55,
+    "facilities": [
+      "电脑",
+      "空调",
+      "网络",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R130",
+    "room_name": "科研108",
+    "building": "科研楼",
+    "capacity": 55,
+    "facilities": [
+      "电脑",
+      "空调",
+      "白板",
+      "音响",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R131",
+    "room_name": "科研201",
+    "building": "科研楼",
+    "capacity": 54,
+    "facilities": [
+      "空调",
+      "白板",
+      "投影仪",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R132",
+    "room_name": "科研202",
+    "building": "科研楼",
+    "capacity": 30,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "电脑",
+      "网络",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R133",
+    "room_name": "科研203",
+    "building": "科研楼",
+    "capacity": 48,
+    "facilities": [
+      "白板",
+      "音响",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R134",
+    "room_name": "科研204",
+    "building": "科研楼",
+    "capacity": 48,
+    "facilities": [
+      "白板",
+      "电脑",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R135",
+    "room_name": "科研205",
+    "building": "科研楼",
+    "capacity": 45,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R136",
+    "room_name": "科研206",
+    "building": "科研楼",
+    "capacity": 37,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "网络",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R137",
+    "room_name": "科研207",
+    "building": "科研楼",
+    "capacity": 53,
+    "facilities": [
+      "白板",
+      "音响",
+      "投影仪",
+      "电脑",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R138",
+    "room_name": "科研208",
+    "building": "科研楼",
+    "capacity": 40,
+    "facilities": [
+      "网络",
+      "白板",
+      "音响",
+      "电脑",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R139",
+    "room_name": "科研301",
+    "building": "科研楼",
+    "capacity": 114,
+    "facilities": [
+      "投影仪",
+      "网络",
+      "白板",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R140",
+    "room_name": "科研302",
+    "building": "科研楼",
+    "capacity": 93,
+    "facilities": [
+      "电脑",
+      "空调",
+      "音响",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R141",
+    "room_name": "科研303",
+    "building": "科研楼",
+    "capacity": 113,
+    "facilities": [
+      "空调",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R142",
+    "room_name": "科研304",
+    "building": "科研楼",
+    "capacity": 84,
+    "facilities": [
+      "音响",
+      "电脑",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R143",
+    "room_name": "科研305",
+    "building": "科研楼",
+    "capacity": 119,
+    "facilities": [
+      "投影仪",
+      "白板",
+      "空调",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R144",
+    "room_name": "科研306",
+    "building": "科研楼",
+    "capacity": 97,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "音响",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R145",
+    "room_name": "科研307",
+    "building": "科研楼",
+    "capacity": 110,
+    "facilities": [
+      "电脑",
+      "音响",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R146",
+    "room_name": "科研308",
+    "building": "科研楼",
+    "capacity": 93,
+    "facilities": [
+      "网络",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R147",
+    "room_name": "科研401",
+    "building": "科研楼",
+    "capacity": 113,
+    "facilities": [
+      "空调",
+      "电脑",
+      "白板",
+      "投影仪",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R148",
+    "room_name": "科研402",
+    "building": "科研楼",
+    "capacity": 119,
+    "facilities": [
+      "白板",
+      "电脑",
+      "网络",
+      "投影仪",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R149",
+    "room_name": "科研403",
+    "building": "科研楼",
+    "capacity": 90,
+    "facilities": [
+      "投影仪",
+      "网络",
+      "白板",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R150",
+    "room_name": "科研404",
+    "building": "科研楼",
+    "capacity": 90,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R151",
+    "room_name": "科研405",
+    "building": "科研楼",
+    "capacity": 109,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "音响",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R152",
+    "room_name": "科研406",
+    "building": "科研楼",
+    "capacity": 85,
+    "facilities": [
+      "空调",
+      "白板",
+      "电脑",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R153",
+    "room_name": "科研407",
+    "building": "科研楼",
+    "capacity": 95,
+    "facilities": [
+      "音响",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R154",
+    "room_name": "科研408",
+    "building": "科研楼",
+    "capacity": 120,
+    "facilities": [
+      "空调",
+      "白板",
+      "投影仪",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R155",
+    "room_name": "科研501",
+    "building": "科研楼",
+    "capacity": 153,
+    "facilities": [
+      "电脑",
+      "空调",
+      "网络",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R156",
+    "room_name": "科研502",
+    "building": "科研楼",
+    "capacity": 170,
+    "facilities": [
+      "电脑",
+      "网络",
+      "白板",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R157",
+    "room_name": "科研503",
+    "building": "科研楼",
+    "capacity": 156,
+    "facilities": [
+      "电脑",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R158",
+    "room_name": "科研504",
+    "building": "科研楼",
+    "capacity": 184,
+    "facilities": [
+      "投影仪",
+      "网络",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R159",
+    "room_name": "科研505",
+    "building": "科研楼",
+    "capacity": 195,
+    "facilities": [
+      "网络",
+      "电脑",
+      "音响",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R160",
+    "room_name": "科研506",
+    "building": "科研楼",
+    "capacity": 185,
+    "facilities": [
+      "网络",
+      "白板",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R161",
+    "room_name": "科研507",
+    "building": "科研楼",
+    "capacity": 194,
+    "facilities": [
+      "空调",
+      "网络",
+      "投影仪",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R162",
+    "room_name": "科研508",
+    "building": "科研楼",
+    "capacity": 166,
+    "facilities": [
+      "网络",
+      "电脑",
+      "空调",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R163",
+    "room_name": "科研601",
+    "building": "科研楼",
+    "capacity": 172,
+    "facilities": [
+      "电脑",
+      "网络",
+      "投影仪",
+      "空调",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R164",
+    "room_name": "科研602",
+    "building": "科研楼",
+    "capacity": 189,
+    "facilities": [
+      "网络",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R165",
+    "room_name": "科研603",
+    "building": "科研楼",
+    "capacity": 197,
+    "facilities": [
+      "音响",
+      "白板",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R166",
+    "room_name": "科研604",
+    "building": "科研楼",
+    "capacity": 161,
+    "facilities": [
+      "电脑",
+      "投影仪",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R167",
+    "room_name": "科研605",
+    "building": "科研楼",
+    "capacity": 169,
+    "facilities": [
+      "网络",
+      "白板",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R168",
+    "room_name": "科研606",
+    "building": "科研楼",
+    "capacity": 169,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "音响",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R169",
+    "room_name": "科研607",
+    "building": "科研楼",
+    "capacity": 154,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R170",
+    "room_name": "科研608",
+    "building": "科研楼",
+    "capacity": 161,
+    "facilities": [
+      "空调",
+      "电脑",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R171",
+    "room_name": "科研701",
+    "building": "科研楼",
+    "capacity": 189,
+    "facilities": [
+      "音响",
+      "白板",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R172",
+    "room_name": "科研702",
+    "building": "科研楼",
+    "capacity": 159,
+    "facilities": [
+      "网络",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R173",
+    "room_name": "科研703",
+    "building": "科研楼",
+    "capacity": 174,
+    "facilities": [
+      "音响",
+      "网络",
+      "电脑",
+      "白板",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R174",
+    "room_name": "科研704",
+    "building": "科研楼",
+    "capacity": 187,
+    "facilities": [
+      "音响",
+      "投影仪",
+      "空调",
+      "电脑",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R175",
+    "room_name": "科研705",
+    "building": "科研楼",
+    "capacity": 183,
+    "facilities": [
+      "投影仪",
+      "网络",
+      "音响",
+      "电脑",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R176",
+    "room_name": "科研706",
+    "building": "科研楼",
+    "capacity": 182,
+    "facilities": [
+      "空调",
+      "音响",
+      "投影仪",
+      "网络",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R177",
+    "room_name": "科研707",
+    "building": "科研楼",
+    "capacity": 198,
+    "facilities": [
+      "白板",
+      "电脑",
+      "音响",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R178",
+    "room_name": "科研708",
+    "building": "科研楼",
+    "capacity": 200,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "空调",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R179",
+    "room_name": "科研801",
+    "building": "科研楼",
+    "capacity": 155,
+    "facilities": [
+      "白板",
+      "投影仪",
+      "网络",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R180",
+    "room_name": "科研802",
+    "building": "科研楼",
+    "capacity": 193,
+    "facilities": [
+      "空调",
+      "投影仪",
+      "音响",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R181",
+    "room_name": "科研803",
+    "building": "科研楼",
+    "capacity": 178,
+    "facilities": [
+      "电脑",
+      "网络",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R182",
+    "room_name": "科研804",
+    "building": "科研楼",
+    "capacity": 182,
+    "facilities": [
+      "网络",
+      "音响",
+      "投影仪",
+      "电脑",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R183",
+    "room_name": "科研805",
+    "building": "科研楼",
+    "capacity": 171,
+    "facilities": [
+      "电脑",
+      "音响",
+      "投影仪",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R184",
+    "room_name": "科研806",
+    "building": "科研楼",
+    "capacity": 150,
+    "facilities": [
+      "投影仪",
+      "音响",
+      "网络",
+      "电脑",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R185",
+    "room_name": "科研807",
+    "building": "科研楼",
+    "capacity": 184,
+    "facilities": [
+      "音响",
+      "电脑",
+      "空调",
+      "白板",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R186",
+    "room_name": "科研808",
+    "building": "科研楼",
+    "capacity": 170,
+    "facilities": [
+      "网络",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R187",
+    "room_name": "学活101",
+    "building": "学生活动中心",
+    "capacity": 500,
+    "facilities": [
+      "网络",
+      "投影仪",
+      "电脑",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R188",
+    "room_name": "学活102",
+    "building": "学生活动中心",
+    "capacity": 300,
+    "facilities": [
+      "音响",
+      "电脑",
+      "投影仪",
+      "空调",
+      "白板"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R189",
+    "room_name": "学活103",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "音响",
+      "白板",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R190",
+    "room_name": "学活104",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "音响",
+      "网络",
+      "白板",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R191",
+    "room_name": "学活105",
+    "building": "学生活动中心",
+    "capacity": 300,
+    "facilities": [
+      "音响",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R192",
+    "room_name": "学活201",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "白板",
+      "网络",
+      "音响",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R193",
+    "room_name": "学活202",
+    "building": "学生活动中心",
+    "capacity": 300,
+    "facilities": [
+      "电脑",
+      "白板",
+      "音响",
+      "投影仪"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R194",
+    "room_name": "学活203",
+    "building": "学生活动中心",
+    "capacity": 300,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R195",
+    "room_name": "学活204",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "音响",
+      "网络",
+      "投影仪",
+      "白板",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R196",
+    "room_name": "学活205",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "投影仪",
+      "空调",
+      "白板",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R197",
+    "room_name": "学活301",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "投影仪",
+      "电脑",
+      "网络",
+      "音响",
+      "空调"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R198",
+    "room_name": "学活302",
+    "building": "学生活动中心",
+    "capacity": 500,
+    "facilities": [
+      "电脑",
+      "空调",
+      "网络",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R199",
+    "room_name": "学活303",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "网络",
+      "白板",
+      "空调",
+      "音响",
+      "电脑"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R200",
+    "room_name": "学活304",
+    "building": "学生活动中心",
+    "capacity": 500,
+    "facilities": [
+      "空调",
+      "白板",
+      "电脑",
+      "网络"
+    ],
+    "available": true
+  },
+  {
+    "room_id": "R201",
+    "room_name": "学活305",
+    "building": "学生活动中心",
+    "capacity": 200,
+    "facilities": [
+      "空调",
+      "电脑",
+      "白板",
+      "音响"
+    ],
+    "available": true
+  }
+]

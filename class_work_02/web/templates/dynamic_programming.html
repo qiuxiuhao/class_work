@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态规划算法 - 课程选择优化</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <a href="/" class="back-link">← 返回首页</a>
+            <h1>📊 动态规划算法</h1>
+            <p class="subtitle">北邮学生选课优化问题</p>
+        </header>
+
+        <div class="content">
+            <!-- 算法说明 -->
+            <section class="section">
+                <h2>算法说明</h2>
+                <div class="info-card">
+                    <h3>问题描述</h3>
+                    <p>学生需要在有限的时间内选择课程，使得总学分最大化，同时避免时间冲突。这是一个带时间约束的0-1背包问题。</p>
+                    <h3 style="margin-top: 15px;">算法设计</h3>
+                    <ul>
+                        <li><strong>状态定义：</strong>dp[i][mask] 表示考虑前i门课程，占用时间段为mask时的最大学分</li>
+                        <li><strong>状态转移：</strong>对于第i门课程，选或不选（检查时间冲突）</li>
+                        <li><strong>时间复杂度：</strong>O(n × 2^m)，n为课程数，m为时间段数</li>
+                        <li><strong>空间复杂度：</strong>O(n × 2^m)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 控制面板 -->
+            <section class="section">
+                <h2>参数设置</h2>
+                <div class="control-panel">
+                    <div class="control-group">
+                        <label for="numCourses">选择课程数量（从前N门课程中选择）：</label>
+                        <input type="number" id="numCourses" min="5" max="30" value="15">
+                        <small style="color: #666; display: block; margin-top: 5px;">
+                            建议：5-20门（数量越多，计算时间越长）
+                        </small>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="minCredits">最低学分要求：</label>
+                        <input type="number" id="minCredits" min="0" max="50" value="12">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="maxCourses">最多选课数量限制（可选）：</label>
+                        <input type="number" id="maxCourses" min="0" max="20" value="0">
+                        <small style="color: #666; display: block; margin-top: 5px;">
+                            设为0表示不限制
+                        </small>
+                    </div>
+
+                    <button class="btn" id="runBtn" onclick="runAlgorithm()">🚀 运行算法</button>
+                </div>
+            </section>
+
+            <!-- 结果展示 -->
+            <section class="section" id="resultSection" style="display: none;">
+                <h2>运行结果</h2>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>算法性能</h3>
+                    </div>
+                    <div id="performanceMetrics"></div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>选课结果</h3>
+                    </div>
+                    <div id="courseResults"></div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>课程表</h3>
+                    </div>
+                    <div id="scheduleTable"></div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>执行日志（前20条）</h3>
+                    </div>
+                    <div id="executionLog"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        let allCourses = [];
+
+        // 页面加载时获取课程数据
+        async function loadCourses() {
+            try {
+                const response = await fetch('/api/courses');
+                const data = await response.json();
+                if (data.success) {
+                    allCourses = data.data;
+                    console.log(`已加载 ${allCourses.length} 门课程`);
+                }
+            } catch (error) {
+                console.error('加载课程数据失败:', error);
+                alert('加载课程数据失败，请刷新页面重试');
+            }
+        }
+
+        // 运行算法
+        async function runAlgorithm() {
+            const numCourses = parseInt(document.getElementById('numCourses').value);
+            const minCredits = parseInt(document.getElementById('minCredits').value);
+            const maxCourses = parseInt(document.getElementById('maxCourses').value);
+
+            if (numCourses > allCourses.length) {
+                alert(`课程数量不能超过 ${allCourses.length}`);
+                return;
+            }
+
+            // 禁用按钮，显示加载状态
+            const btn = document.getElementById('runBtn');
+            btn.disabled = true;
+            btn.textContent = '⏳ 计算中...';
+
+            // 隐藏结果区域
+            document.getElementById('resultSection').style.display = 'none';
+
+            try {
+                // 构建请求数据
+                const requestData = {
+                    course_indices: Array.from({length: numCourses}, (_, i) => i),
+                    min_credits: minCredits,
+                    max_courses: maxCourses > 0 ? maxCourses : null
+                };
+
+                // 调用API
+                const response = await fetch('/api/dp/run', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    displayResults(data.result);
+                } else {
+                    alert('算法执行失败: ' + data.error);
+                }
+            } catch (error) {
+                console.error('执行失败:', error);
+                alert('算法执行失败，请重试');
+            } finally {
+                // 恢复按钮状态
+                btn.disabled = false;
+                btn.textContent = '🚀 运行算法';
+            }
+        }
+
+        // 显示结果
+        function displayResults(result) {
+            // 显示结果区域
+            document.getElementById('resultSection').style.display = 'block';
+
+            // 性能指标
+            const performanceHTML = `
+                <div class="metric"><strong>总学分：</strong>${result.total_credits}</div>
+                <div class="metric"><strong>选课数量：</strong>${result.num_courses}</div>
+                <div class="metric"><strong>执行时间：</strong>${result.execution_time.toFixed(4)}秒</div>
+                <div class="metric"><strong>探索状态数：</strong>${result.dp_states_explored}</div>
+                <div class="metric"><strong>时间复杂度：</strong>${result.time_complexity}</div>
+            `;
+            document.getElementById('performanceMetrics').innerHTML = performanceHTML;
+
+            // 选课结果
+            let coursesHTML = '<div style="margin-top: 15px;">';
+            result.selected_courses.forEach((course, index) => {
+                const timeSlots = course.time_slots.map(slot => `${slot.day} ${slot.period}`).join(', ');
+                coursesHTML += `
+                    <div style="background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 8px; border-left: 4px solid #667eea;">
+                        <div style="font-weight: 600; color: #667eea; margin-bottom: 5px;">
+                            ${index + 1}. ${course.course_name} (${course.credits}学分)
+                        </div>
+                        <div style="color: #666; font-size: 0.9em;">
+                            教师: ${course.teacher} | 教室: ${course.classroom} | 时间: ${timeSlots}
+                        </div>
+                    </div>
+                `;
+            });
+            coursesHTML += '</div>';
+            document.getElementById('courseResults').innerHTML = coursesHTML;
+
+            // 课程表
+            const schedule = result.schedule;
+            const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+            const periods = ['1-2', '3-4', '5-6', '7-8', '9-10'];
+            const dayNames = {'Monday': '周一', 'Tuesday': '周二', 'Wednesday': '周三', 'Thursday': '周四', 'Friday': '周五'};
+
+            let tableHTML = '<table class="schedule-table"><thead><tr><th>时间</th>';
+            weekdays.forEach(day => {
+                tableHTML += `<th>${dayNames[day]}</th>`;
+            });
+            tableHTML += '</tr></thead><tbody>';
+
+            periods.forEach(period => {
+                tableHTML += `<tr><td><strong>${period}节</strong></td>`;
+                weekdays.forEach(day => {
+                    const course = schedule[day] && schedule[day][period];
+                    if (course) {
+                        tableHTML += `
+                            <td class="course-cell">
+                                <div class="course-name">${course.course_name}</div>
+                                <div style="font-size: 0.85em; color: #666;">${course.teacher}</div>
+                                <div style="font-size: 0.85em; color: #666;">${course.classroom}</div>
+                            </td>
+                        `;
+                    } else {
+                        tableHTML += '<td>-</td>';
+                    }
+                });
+                tableHTML += '</tr>';
+            });
+
+            tableHTML += '</tbody></table>';
+            document.getElementById('scheduleTable').innerHTML = tableHTML;
+
+            // 执行日志
+            let logHTML = '<div style="background: #f8f9fa; padding: 15px; border-radius: 8px; max-height: 400px; overflow-y: auto;">';
+            result.execution_log.forEach((log, index) => {
+                logHTML += `<div style="margin-bottom: 10px; padding: 10px; background: white; border-radius: 5px;">`;
+                logHTML += `<strong style="color: #667eea;">[${index + 1}] ${log.step}</strong><br>`;
+                if (log.description) logHTML += `<span style="color: #666;">${log.description}</span><br>`;
+                if (log.course) logHTML += `<span style="color: #666;">课程: ${log.course}</span><br>`;
+                if (log.credits) logHTML += `<span style="color: #666;">学分: ${log.credits}</span><br>`;
+                logHTML += `</div>`;
+            });
+            logHTML += '</div>';
+            document.getElementById('executionLog').innerHTML = logHTML;
+
+            // 滚动到结果区域
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 页面加载时执行
+        window.addEventListener('DOMContentLoaded', loadCourses);
+    </script>
+</body>
+</html>

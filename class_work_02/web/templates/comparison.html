@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算法对比分析</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <a href="/" class="back-link">← 返回首页</a>
+            <h1>🔍 算法对比分析</h1>
+            <p class="subtitle">动态规划 vs 贪心算法</p>
+        </header>
+
+        <div class="content">
+            <!-- 算法概览 -->
+            <section class="section">
+                <h2>算法概览</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
+                    <div class="info-card">
+                        <h3>📊 动态规划算法</h3>
+                        <ul>
+                            <li><strong>问题：</strong>北邮学生选课优化</li>
+                            <li><strong>类型：</strong>0-1背包变种</li>
+                            <li><strong>时间复杂度：</strong>O(n × 2^m)</li>
+                            <li><strong>空间复杂度：</strong>O(n × 2^m)</li>
+                            <li><strong>最优性：</strong>保证全局最优</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>⚡ 贪心算法</h3>
+                        <ul>
+                            <li><strong>问题：</strong>北邮教室资源分配</li>
+                            <li><strong>类型：</strong>区间调度问题</li>
+                            <li><strong>时间复杂度：</strong>O(n log n)</li>
+                            <li><strong>空间复杂度：</strong>O(n + m)</li>
+                            <li><strong>最优性：</strong>保证全局最优</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 复杂度对比 -->
+            <section class="section">
+                <h2>时间复杂度对比</h2>
+                <div class="result-box">
+                    <div style="text-align: center; padding: 20px;">
+                        <img src="{{ url_for('static', filename='time_complexity.png') }}"
+                             alt="时间复杂度对比图"
+                             style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </div>
+                    <div style="padding: 20px; background: #f8f9fa; border-radius: 8px; margin-top: 20px;">
+                        <h4 style="color: #667eea; margin-bottom: 15px;">分析结论</h4>
+                        <ul style="line-height: 1.8; color: #666;">
+                            <li><strong>动态规划：</strong>时间复杂度为指数级O(n × 2^m)，随着数据规模增长，执行时间快速增加</li>
+                            <li><strong>贪心算法：</strong>时间复杂度为O(n log n)，主要由排序决定，执行效率极高</li>
+                            <li><strong>性能差距：</strong>在相同数据规模下，贪心算法的执行速度远快于动态规划</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 空间复杂度对比 -->
+            <section class="section">
+                <h2>空间复杂度对比</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
+                    <div class="result-box">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">动态规划</h3>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                            <div style="margin-bottom: 10px;"><strong>复杂度：</strong>O(n × 2^m)</div>
+                            <div style="margin-bottom: 10px;"><strong>说明：</strong>需要存储所有状态的DP表</div>
+                            <div style="color: #666; font-size: 0.9em;">
+                                对于40门课程，25个时间段，理论最大状态数约为 1.34B
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-box">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">贪心算法</h3>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                            <div style="margin-bottom: 10px;"><strong>复杂度：</strong>O(n + m)</div>
+                            <div style="margin-bottom: 10px;"><strong>说明：</strong>只需存储活动列表和教室时间表</div>
+                            <div style="color: #666; font-size: 0.9em;">
+                                对于80个活动，201个教室，空间复杂度为 O(281)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 优缺点对比 -->
+            <section class="section">
+                <h2>优缺点对比</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
+                    <div class="result-box">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">动态规划</h3>
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: #4caf50; margin-bottom: 10px;">✅ 优点</h4>
+                            <ul style="color: #666; line-height: 1.8;">
+                                <li>保证找到全局最优解</li>
+                                <li>可以处理复杂约束条件</li>
+                                <li>适合优化问题</li>
+                                <li>通用性强</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: #f44336; margin-bottom: 10px;">❌ 缺点</h4>
+                            <ul style="color: #666; line-height: 1.8;">
+                                <li>时间复杂度高（指数级）</li>
+                                <li>空间复杂度高</li>
+                                <li>数据规模受限</li>
+                                <li>状态设计较复杂</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="result-box">
+                        <h3 style="color: #667eea; margin-bottom: 15px;">贪心算法</h3>
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: #4caf50; margin-bottom: 10px;">✅ 优点</h4>
+                            <ul style="color: #666; line-height: 1.8;">
+                                <li>时间复杂度低（O(n log n)）</li>
+                                <li>空间复杂度低</li>
+                                <li>实现简单直观</li>
+                                <li>可处理大规模数据</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: #f44336; margin-bottom: 10px;">❌ 缺点</h4>
+                            <ul style="color: #666; line-height: 1.8;">
+                                <li>只适用于特定问题</li>
+                                <li>需要证明贪心策略正确性</li>
+                                <li>不能处理复杂约束</li>
+                                <li>通用性较差</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 适用场景对比 -->
+            <section class="section">
+                <h2>适用场景对比</h2>
+                <div class="result-box">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>对比维度</th>
+                                <th>动态规划</th>
+                                <th>贪心算法</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>问题特征</strong></td>
+                                <td>具有最优子结构和重叠子问题</td>
+                                <td>具有贪心选择性质和最优子结构</td>
+                            </tr>
+                            <tr>
+                                <td><strong>约束条件</strong></td>
+                                <td>可处理多重复杂约束</td>
+                                <td>适合简单约束</td>
+                            </tr>
+                            <tr>
+                                <td><strong>数据规模</strong></td>
+                                <td>小到中等规模（n < 30）</td>
+                                <td>可处理大规模数据（n > 1000）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>实现难度</strong></td>
+                                <td>较高（状态设计复杂）</td>
+                                <td>较低（策略简单直观）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>典型应用</strong></td>
+                                <td>背包问题、最短路径、编辑距离</td>
+                                <td>活动选择、哈夫曼编码、最小生成树</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 实际应用建议 -->
+            <section class="section">
+                <h2>实际应用建议</h2>
+                <div class="info-card">
+                    <h3>如何选择算法？</h3>
+                    <div style="margin-top: 15px; line-height: 1.8; color: #666;">
+                        <p style="margin-bottom: 15px;">
+                            <strong style="color: #667eea;">选择动态规划：</strong>
+                            当问题需要考虑多重约束，追求全局最优解，且数据规模不大时。
+                            例如：资源分配优化、路径规划、序列比对等。
+                        </p>
+                        <p style="margin-bottom: 15px;">
+                            <strong style="color: #667eea;">选择贪心算法：</strong>
+                            当问题具有明确的贪心选择性质，需要处理大规模数据，且对效率要求高时。
+                            例如：任务调度、区间覆盖、最小生成树等。
+                        </p>
+                        <p>
+                            <strong style="color: #667eea;">关键判断：</strong>
+                            首先判断问题是否具有贪心选择性质。如果有，优先使用贪心算法；
+                            如果没有或不确定，使用动态规划保证正确性。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 性能测试数据 -->
+            <section class="section">
+                <h2>性能测试数据</h2>
+                <div class="result-box">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>数据规模</th>
+                                <th>动态规划执行时间</th>
+                                <th>贪心算法执行时间</th>
+                                <th>性能比</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>n = 5</td>
+                                <td>~0.0001秒</td>
+                                <td>~0.0000秒</td>
+                                <td>相近</td>
+                            </tr>
+                            <tr>
+                                <td>n = 10</td>
+                                <td>~0.0001秒</td>
+                                <td>~0.0000秒</td>
+                                <td>贪心快2-3倍</td>
+                            </tr>
+                            <tr>
+                                <td>n = 15</td>
+                                <td>~0.0007秒</td>
+                                <td>~0.0000秒</td>
+                                <td>贪心快10+倍</td>
+                            </tr>
+                            <tr>
+                                <td>n = 20</td>
+                                <td>~0.0027秒</td>
+                                <td>~0.0000秒</td>
+                                <td>贪心快50+倍</td>
+                            </tr>
+                            <tr>
+                                <td>n = 30+</td>
+                                <td>指数增长</td>
+                                <td>仍然极快</td>
+                                <td>差距巨大</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

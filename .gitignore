@@ -1,0 +1,45 @@
+# Python虚拟环境
+class_work_02/bin/
+class_work_02/lib/
+class_work_02/include/
+class_work_02/share/
+class_work_02/pyvenv.cfg
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info
+dist/
+build/
+
+# 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# 文档和报告
+class_work_02/conversation_log.md
+class_work_02/phase1_analysis.md
+class_work_02/track.md
+class_work_02/project_report_final.md
+class_work_02/*.pdf
+class_work_02/vlm_records/
+class_work_02/report/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 生成的图表（可选）
+class_work_02/data/*.png
+class_work_02/data/*.jpg
+
+# Claude相关
+.claude/

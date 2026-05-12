@@ -1,0 +1,39 @@
+{
+  "course_selection": {
+    "easy": {
+      "description": "简单场景：10门课程，无复杂冲突",
+      "num_courses": 10,
+      "student_available_slots": 20,
+      "min_credits": 12
+    },
+    "medium": {
+      "description": "中等场景：20门课程，部分时间冲突",
+      "num_courses": 20,
+      "student_available_slots": 15,
+      "min_credits": 16
+    },
+    "hard": {
+      "description": "困难场景：30门课程，大量时间冲突",
+      "num_courses": 30,
+      "student_available_slots": 12,
+      "min_credits": 20
+    }
+  },
+  "room_allocation": {
+    "weekday_peak": {
+      "description": "工作日高峰：大量课程和活动",
+      "day": "Monday",
+      "num_activities": 50
+    },
+    "weekend": {
+      "description": "周末场景：主要是社团活动和讲座",
+      "day": "Saturday",
+      "num_activities": 30
+    },
+    "exam_week": {
+      "description": "考试周：大量考试安排",
+      "day": "Wednesday",
+      "num_activities": 40
+    }
+  }
+}

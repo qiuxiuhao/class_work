@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算法可视化演示系统 - 北邮场景</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 算法可视化演示系统</h1>
+            <p class="subtitle">北京邮电大学场景应用</p>
+        </header>
+
+        <nav class="nav-cards">
+            <a href="/dynamic-programming" class="nav-card">
+                <div class="card-icon">📊</div>
+                <h2>动态规划算法</h2>
+                <p>课程选择优化问题</p>
+                <div class="card-meta">
+                    <span class="complexity">O(n × 2^m)</span>
+                    <span class="tag">全局最优</span>
+                </div>
+            </a>
+
+            <a href="/greedy" class="nav-card">
+                <div class="card-icon">⚡</div>
+                <h2>贪心算法</h2>
+                <p>教室资源分配问题</p>
+                <div class="card-meta">
+                    <span class="complexity">O(n log n)</span>
+                    <span class="tag">高效快速</span>
+                </div>
+            </a>
+
+            <a href="/comparison" class="nav-card">
+                <div class="card-icon">🔍</div>
+                <h2>算法对比分析</h2>
+                <p>性能与适用场景对比</p>
+                <div class="card-meta">
+                    <span class="tag">深度分析</span>
+                </div>
+            </a>
+        </nav>
+
+        <section class="info-section">
+            <h2>系统介绍</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🎯 项目目标</h3>
+                    <p>通过北邮实际场景，演示动态规划和贪心算法的应用，帮助理解算法原理和性能特点。</p>
+                </div>
+                <div class="info-card">
+                    <h3>📚 应用场景</h3>
+                    <ul>
+                        <li><strong>动态规划：</strong>学生选课优化，在时间冲突约束下最大化学分</li>
+                        <li><strong>贪心算法：</strong>教室资源分配，最大化活动安排数量</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>💡 核心特性</h3>
+                    <ul>
+                        <li>实时算法执行与可视化</li>
+                        <li>详细的执行过程日志</li>
+                        <li>性能指标统计分析</li>
+                        <li>交互式参数调整</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <h2>数据集概览</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="courseCount">-</div>
+                    <div class="stat-label">课程总数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="activityCount">-</div>
+                    <div class="stat-label">活动总数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="classroomCount">-</div>
+                    <div class="stat-label">教室总数</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>北京邮电大学 · 算法课程作业 · 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        // 加载数据统计
+        async function loadStats() {
+            try {
+                const [coursesRes, activitiesRes, classroomsRes] = await Promise.all([
+                    fetch('/api/courses'),
+                    fetch('/api/activities'),
+                    fetch('/api/classrooms')
+                ]);
+
+                const courses = await coursesRes.json();
+                const activities = await activitiesRes.json();
+                const classrooms = await classroomsRes.json();
+
+                document.getElementById('courseCount').textContent = courses.count || 0;
+                document.getElementById('activityCount').textContent = activities.count || 0;
+                document.getElementById('classroomCount').textContent = classrooms.count || 0;
+            } catch (error) {
+                console.error('加载统计数据失败:', error);
+            }
+        }
+
+        // 页面加载时执行
+        window.addEventListener('DOMContentLoaded', loadStats);
+    </script>
+</body>
+</html>

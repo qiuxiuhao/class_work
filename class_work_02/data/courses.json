@@ -1,0 +1,842 @@
+[
+  {
+    "course_id": "CS101",
+    "course_name": "计算机视觉",
+    "credits": 3,
+    "teacher": "罗教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "1-2"
+      },
+      {
+        "day": "Wednesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Monday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "学活302",
+    "capacity": 500,
+    "description": "计算机视觉是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS102",
+    "course_name": "深度学习",
+    "credits": 3,
+    "teacher": "赵副教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Monday",
+        "period": "7-8"
+      }
+    ],
+    "classroom": "科研204",
+    "capacity": 48,
+    "description": "深度学习是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS103",
+    "course_name": "计算机组成原理",
+    "credits": 4,
+    "teacher": "黄副教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "5-6"
+      },
+      {
+        "day": "Wednesday",
+        "period": "7-8"
+      },
+      {
+        "day": "Friday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "教四207",
+    "capacity": 37,
+    "description": "计算机组成原理是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS104",
+    "course_name": "信息安全",
+    "credits": 3,
+    "teacher": "周助教",
+    "time_slots": [
+      {
+        "day": "Thursday",
+        "period": "3-4"
+      },
+      {
+        "day": "Wednesday",
+        "period": "7-8"
+      },
+      {
+        "day": "Monday",
+        "period": "9-10"
+      }
+    ],
+    "classroom": "教四206",
+    "capacity": 46,
+    "description": "信息安全是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS105",
+    "course_name": "分布式系统",
+    "credits": 3,
+    "teacher": "马助教",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "1-2"
+      },
+      {
+        "day": "Friday",
+        "period": "5-6"
+      },
+      {
+        "day": "Tuesday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "科研702",
+    "capacity": 159,
+    "description": "分布式系统是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS106",
+    "course_name": "网络安全",
+    "credits": 4,
+    "teacher": "高讲师",
+    "time_slots": [
+      {
+        "day": "Monday",
+        "period": "7-8"
+      },
+      {
+        "day": "Wednesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Tuesday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "科研502",
+    "capacity": 170,
+    "description": "网络安全是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS107",
+    "course_name": "模拟电路",
+    "credits": 3,
+    "teacher": "朱教授",
+    "time_slots": [
+      {
+        "day": "Friday",
+        "period": "5-6"
+      },
+      {
+        "day": "Thursday",
+        "period": "7-8"
+      },
+      {
+        "day": "Wednesday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "教三110",
+    "capacity": 38,
+    "description": "模拟电路是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS108",
+    "course_name": "软件测试",
+    "credits": 4,
+    "teacher": "胡讲师",
+    "time_slots": [
+      {
+        "day": "Friday",
+        "period": "9-10"
+      },
+      {
+        "day": "Wednesday",
+        "period": "9-10"
+      }
+    ],
+    "classroom": "教四509",
+    "capacity": 161,
+    "description": "软件测试是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS109",
+    "course_name": "Java程序设计",
+    "credits": 2,
+    "teacher": "高副教授",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Tuesday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "教四307",
+    "capacity": 83,
+    "description": "Java程序设计是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS110",
+    "course_name": "数据挖掘",
+    "credits": 4,
+    "teacher": "罗助教",
+    "time_slots": [
+      {
+        "day": "Monday",
+        "period": "5-6"
+      },
+      {
+        "day": "Tuesday",
+        "period": "7-8"
+      }
+    ],
+    "classroom": "教四610",
+    "capacity": 180,
+    "description": "数据挖掘是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS111",
+    "course_name": "大数据技术",
+    "credits": 4,
+    "teacher": "胡副教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "3-4"
+      },
+      {
+        "day": "Monday",
+        "period": "9-10"
+      }
+    ],
+    "classroom": "科研805",
+    "capacity": 171,
+    "description": "大数据技术是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS112",
+    "course_name": "区块链技术",
+    "credits": 3,
+    "teacher": "何讲师",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "3-4"
+      },
+      {
+        "day": "Thursday",
+        "period": "5-6"
+      },
+      {
+        "day": "Monday",
+        "period": "7-8"
+      }
+    ],
+    "classroom": "科研304",
+    "capacity": 84,
+    "description": "区块链技术是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS113",
+    "course_name": "移动应用开发",
+    "credits": 3,
+    "teacher": "黄助教",
+    "time_slots": [
+      {
+        "day": "Friday",
+        "period": "1-2"
+      },
+      {
+        "day": "Tuesday",
+        "period": "3-4"
+      },
+      {
+        "day": "Thursday",
+        "period": "9-10"
+      }
+    ],
+    "classroom": "教四202",
+    "capacity": 46,
+    "description": "移动应用开发是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS114",
+    "course_name": "软件项目管理",
+    "credits": 3,
+    "teacher": "马讲师",
+    "time_slots": [
+      {
+        "day": "Friday",
+        "period": "3-4"
+      },
+      {
+        "day": "Thursday",
+        "period": "1-2"
+      },
+      {
+        "day": "Tuesday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "科研308",
+    "capacity": 93,
+    "description": "软件项目管理是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS115",
+    "course_name": "人工智能",
+    "credits": 4,
+    "teacher": "郭教授",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "7-8"
+      },
+      {
+        "day": "Thursday",
+        "period": "5-6"
+      },
+      {
+        "day": "Friday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "科研103",
+    "capacity": 40,
+    "description": "人工智能是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS116",
+    "course_name": "密码学",
+    "credits": 4,
+    "teacher": "高教授",
+    "time_slots": [
+      {
+        "day": "Thursday",
+        "period": "3-4"
+      },
+      {
+        "day": "Tuesday",
+        "period": "3-4"
+      },
+      {
+        "day": "Friday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "教三107",
+    "capacity": 30,
+    "description": "密码学是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS117",
+    "course_name": "计算机图形学",
+    "credits": 4,
+    "teacher": "徐讲师",
+    "time_slots": [
+      {
+        "day": "Monday",
+        "period": "1-2"
+      },
+      {
+        "day": "Wednesday",
+        "period": "5-6"
+      },
+      {
+        "day": "Friday",
+        "period": "7-8"
+      }
+    ],
+    "classroom": "教四306",
+    "capacity": 83,
+    "description": "计算机图形学是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS118",
+    "course_name": "容器技术",
+    "credits": 3,
+    "teacher": "刘副教授",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Friday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "教四601",
+    "capacity": 193,
+    "description": "容器技术是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS119",
+    "course_name": "形式语言与自动机",
+    "credits": 3,
+    "teacher": "徐助教",
+    "time_slots": [
+      {
+        "day": "Friday",
+        "period": "1-2"
+      },
+      {
+        "day": "Tuesday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "教四406",
+    "capacity": 115,
+    "description": "形式语言与自动机是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS120",
+    "course_name": "通信原理",
+    "credits": 3,
+    "teacher": "刘助教",
+    "time_slots": [
+      {
+        "day": "Thursday",
+        "period": "3-4"
+      },
+      {
+        "day": "Monday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "教三506",
+    "capacity": 182,
+    "description": "通信原理是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS121",
+    "course_name": "C++程序设计",
+    "credits": 2,
+    "teacher": "周教授",
+    "time_slots": [
+      {
+        "day": "Friday",
+        "period": "5-6"
+      },
+      {
+        "day": "Tuesday",
+        "period": "5-6"
+      },
+      {
+        "day": "Monday",
+        "period": "7-8"
+      }
+    ],
+    "classroom": "教四607",
+    "capacity": 199,
+    "description": "C++程序设计是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS122",
+    "course_name": "电磁场与电磁波",
+    "credits": 3,
+    "teacher": "王副教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "7-8"
+      },
+      {
+        "day": "Monday",
+        "period": "5-6"
+      },
+      {
+        "day": "Friday",
+        "period": "9-10"
+      }
+    ],
+    "classroom": "教四205",
+    "capacity": 48,
+    "description": "电磁场与电磁波是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS123",
+    "course_name": "DevOps实践",
+    "credits": 2,
+    "teacher": "高教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "5-6"
+      },
+      {
+        "day": "Monday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "科研201",
+    "capacity": 54,
+    "description": "DevOps实践是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS124",
+    "course_name": "Web前端开发",
+    "credits": 3,
+    "teacher": "吴讲师",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "5-6"
+      },
+      {
+        "day": "Monday",
+        "period": "3-4"
+      },
+      {
+        "day": "Wednesday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "教三203",
+    "capacity": 48,
+    "description": "Web前端开发是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS125",
+    "course_name": "操作系统",
+    "credits": 3,
+    "teacher": "吴副教授",
+    "time_slots": [
+      {
+        "day": "Friday",
+        "period": "7-8"
+      },
+      {
+        "day": "Thursday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "科研407",
+    "capacity": 95,
+    "description": "操作系统是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS126",
+    "course_name": "线性代数",
+    "credits": 5,
+    "teacher": "何副教授",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "3-4"
+      },
+      {
+        "day": "Friday",
+        "period": "3-4"
+      },
+      {
+        "day": "Thursday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "科研506",
+    "capacity": 185,
+    "description": "线性代数是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS127",
+    "course_name": "推荐系统",
+    "credits": 4,
+    "teacher": "赵助教",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "3-4"
+      },
+      {
+        "day": "Monday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "科研207",
+    "capacity": 53,
+    "description": "推荐系统是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS128",
+    "course_name": "语音识别",
+    "credits": 3,
+    "teacher": "刘教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Wednesday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "科研505",
+    "capacity": 195,
+    "description": "语音识别是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS129",
+    "course_name": "物联网技术",
+    "credits": 3,
+    "teacher": "周助教",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Thursday",
+        "period": "9-10"
+      }
+    ],
+    "classroom": "教四603",
+    "capacity": 178,
+    "description": "物联网技术是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS130",
+    "course_name": "敏捷开发",
+    "credits": 3,
+    "teacher": "王教授",
+    "time_slots": [
+      {
+        "day": "Thursday",
+        "period": "1-2"
+      },
+      {
+        "day": "Wednesday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "科研104",
+    "capacity": 45,
+    "description": "敏捷开发是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS131",
+    "course_name": "神经网络",
+    "credits": 4,
+    "teacher": "何副教授",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Tuesday",
+        "period": "9-10"
+      },
+      {
+        "day": "Friday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "教四210",
+    "capacity": 34,
+    "description": "神经网络是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS132",
+    "course_name": "编译原理",
+    "credits": 3,
+    "teacher": "周助教",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "1-2"
+      },
+      {
+        "day": "Friday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "科研305",
+    "capacity": 119,
+    "description": "编译原理是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS133",
+    "course_name": "数字电路",
+    "credits": 4,
+    "teacher": "李副教授",
+    "time_slots": [
+      {
+        "day": "Thursday",
+        "period": "1-2"
+      },
+      {
+        "day": "Friday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "教三106",
+    "capacity": 48,
+    "description": "数字电路是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS134",
+    "course_name": "信号与系统",
+    "credits": 4,
+    "teacher": "李教授",
+    "time_slots": [
+      {
+        "day": "Thursday",
+        "period": "9-10"
+      },
+      {
+        "day": "Monday",
+        "period": "3-4"
+      },
+      {
+        "day": "Tuesday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "科研302",
+    "capacity": 93,
+    "description": "信号与系统是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS135",
+    "course_name": "概率论与数理统计",
+    "credits": 4,
+    "teacher": "胡助教",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "1-2"
+      },
+      {
+        "day": "Monday",
+        "period": "5-6"
+      }
+    ],
+    "classroom": "学活101",
+    "capacity": 500,
+    "description": "概率论与数理统计是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS136",
+    "course_name": "数据结构与算法",
+    "credits": 3,
+    "teacher": "李教授",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "1-2"
+      },
+      {
+        "day": "Monday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "科研407",
+    "capacity": 95,
+    "description": "数据结构与算法是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS137",
+    "course_name": "离散数学",
+    "credits": 4,
+    "teacher": "朱讲师",
+    "time_slots": [
+      {
+        "day": "Thursday",
+        "period": "5-6"
+      },
+      {
+        "day": "Tuesday",
+        "period": "7-8"
+      }
+    ],
+    "classroom": "教四410",
+    "capacity": 90,
+    "description": "离散数学是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS138",
+    "course_name": "高等数学",
+    "credits": 5,
+    "teacher": "李副教授",
+    "time_slots": [
+      {
+        "day": "Wednesday",
+        "period": "5-6"
+      },
+      {
+        "day": "Monday",
+        "period": "5-6"
+      },
+      {
+        "day": "Tuesday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "科研707",
+    "capacity": 198,
+    "description": "高等数学是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS139",
+    "course_name": "云计算技术",
+    "credits": 4,
+    "teacher": "刘讲师",
+    "time_slots": [
+      {
+        "day": "Monday",
+        "period": "3-4"
+      },
+      {
+        "day": "Friday",
+        "period": "3-4"
+      }
+    ],
+    "classroom": "教四611",
+    "capacity": 184,
+    "description": "云计算技术是计算机相关专业的重要课程"
+  },
+  {
+    "course_id": "CS140",
+    "course_name": "计算理论",
+    "credits": 3,
+    "teacher": "孙副教授",
+    "time_slots": [
+      {
+        "day": "Tuesday",
+        "period": "7-8"
+      },
+      {
+        "day": "Thursday",
+        "period": "1-2"
+      },
+      {
+        "day": "Monday",
+        "period": "1-2"
+      }
+    ],
+    "classroom": "科研105",
+    "capacity": 58,
+    "description": "计算理论是计算机相关专业的重要课程"
+  }
+]

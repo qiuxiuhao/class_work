@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪心算法 - 教室资源分配</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <a href="/" class="back-link">← 返回首页</a>
+            <h1>⚡ 贪心算法</h1>
+            <p class="subtitle">北邮教室资源分配问题</p>
+        </header>
+
+        <div class="content">
+            <!-- 算法说明 -->
+            <section class="section">
+                <h2>算法说明</h2>
+                <div class="info-card">
+                    <h3>问题描述</h3>
+                    <p>北邮每天有大量的课程、讲座、社团活动需要使用教室。如何分配有限的教室资源，使得能够安排的活动数量最多？这是一个经典的活动选择问题（区间调度问题）。</p>
+                    <h3 style="margin-top: 15px;">算法设计</h3>
+                    <ul>
+                        <li><strong>贪心策略：</strong>按活动结束时间排序，优先选择结束时间早的活动</li>
+                        <li><strong>正确性：</strong>具有贪心选择性质和最优子结构，保证全局最优</li>
+                        <li><strong>时间复杂度：</strong>O(n log n)，主要是排序的复杂度</li>
+                        <li><strong>空间复杂度：</strong>O(n + m)，n为活动数，m为教室数</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 控制面板 -->
+            <section class="section">
+                <h2>参数设置</h2>
+                <div class="control-panel">
+                    <div class="control-group">
+                        <label for="numActivities">活动数量（从前N个活动中选择）：</label>
+                        <input type="number" id="numActivities" min="10" max="80" value="30">
+                    </div>
+
+                    <div class="control-group">
+                        <label for="numClassrooms">教室数量（从前N个教室中选择）：</label>
+                        <input type="number" id="numClassrooms" min="5" max="50" value="15">
+                    </div>
+
+                    <div class="control-group">
+                        <label>
+                            <input type="checkbox" id="priorityWeight" checked>
+                            考虑活动优先级（高优先级活动优先分配）
+                        </label>
+                    </div>
+
+                    <button class="btn" id="runBtn" onclick="runAlgorithm()">🚀 运行算法</button>
+                </div>
+            </section>
+
+            <!-- 结果展示 -->
+            <section class="section" id="resultSection" style="display: none;">
+                <h2>运行结果</h2>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>算法性能</h3>
+                    </div>
+                    <div id="performanceMetrics"></div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>分配统计</h3>
+                    </div>
+                    <div id="allocationStats"></div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>已分配活动（前20个）</h3>
+                    </div>
+                    <div id="allocatedActivities"></div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>未分配活动（前20个）</h3>
+                    </div>
+                    <div id="rejectedActivities"></div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <h3>教室利用率（前10个教室）</h3>
+                    </div>
+                    <div id="roomUtilization"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        let allActivities = [];
+        let allClassrooms = [];
+
+        // 页面加载时获取数据
+        async function loadData() {
+            try {
+                const [activitiesRes, classroomsRes] = await Promise.all([
+                    fetch('/api/activities'),
+                    fetch('/api/classrooms')
+                ]);
+
+                const activitiesData = await activitiesRes.json();
+                const classroomsData = await classroomsRes.json();
+
+                if (activitiesData.success) {
+                    allActivities = activitiesData.data;
+                    console.log(`已加载 ${allActivities.length} 个活动`);
+                }
+
+                if (classroomsData.success) {
+                    allClassrooms = classroomsData.data;
+                    console.log(`已加载 ${allClassrooms.length} 个教室`);
+                }
+            } catch (error) {
+                console.error('加载数据失败:', error);
+                alert('加载数据失败，请刷新页面重试');
+            }
+        }
+
+        // 运行算法
+        async function runAlgorithm() {
+            const numActivities = parseInt(document.getElementById('numActivities').value);
+            const numClassrooms = parseInt(document.getElementById('numClassrooms').value);
+            const priorityWeight = document.getElementById('priorityWeight').checked;
+
+            if (numActivities > allActivities.length) {
+                alert(`活动数量不能超过 ${allActivities.length}`);
+                return;
+            }
+
+            if (numClassrooms > allClassrooms.length) {
+                alert(`教室数量不能超过 ${allClassrooms.length}`);
+                return;
+            }
+
+            // 禁用按钮
+            const btn = document.getElementById('runBtn');
+            btn.disabled = true;
+            btn.textContent = '⏳ 计算中...';
+
+            document.getElementById('resultSection').style.display = 'none';
+
+            try {
+                const requestData = {
+                    activity_indices: Array.from({length: numActivities}, (_, i) => i),
+                    classroom_indices: Array.from({length: numClassrooms}, (_, i) => i),
+                    priority_weight: priorityWeight
+                };
+
+                const response = await fetch('/api/greedy/run', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    displayResults(data.result);
+                } else {
+                    alert('算法执行失败: ' + data.error);
+                }
+            } catch (error) {
+                console.error('执行失败:', error);
+                alert('算法执行失败，请重试');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = '🚀 运行算法';
+            }
+        }
+
+        // 显示结果
+        function displayResults(result) {
+            document.getElementById('resultSection').style.display = 'block';
+
+            // 性能指标
+            const performanceHTML = `
+                <div class="metric"><strong>总活动数：</strong>${result.total_activities}</div>
+                <div class="metric"><strong>分配成功：</strong>${result.allocated_count}</div>
+                <div class="metric"><strong>分配失败：</strong>${result.rejected_count}</div>
+                <div class="metric"><strong>分配率：</strong>${(result.allocation_rate * 100).toFixed(1)}%</div>
+                <div class="metric"><strong>执行时间：</strong>${result.execution_time.toFixed(4)}秒</div>
+                <div class="metric"><strong>时间复杂度：</strong>${result.time_complexity}</div>
+            `;
+            document.getElementById('performanceMetrics').innerHTML = performanceHTML;
+
+            // 分配统计
+            const analysis = result.analysis;
+            let statsHTML = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 15px;">';
+
+            // 按类型统计
+            statsHTML += '<div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">';
+            statsHTML += '<h4 style="color: #667eea; margin-bottom: 10px;">按类型分配</h4>';
+            for (const [type, count] of Object.entries(analysis.allocated_by_type)) {
+                statsHTML += `<div style="margin-bottom: 5px;">${type}: <strong>${count}</strong></div>`;
+            }
+            statsHTML += '</div>';
+
+            // 按优先级统计
+            statsHTML += '<div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">';
+            statsHTML += '<h4 style="color: #667eea; margin-bottom: 10px;">按优先级分配</h4>';
+            for (const [priority, count] of Object.entries(analysis.allocated_by_priority)) {
+                statsHTML += `<div style="margin-bottom: 5px;">${priority}: <strong>${count}</strong></div>`;
+            }
+            statsHTML += '</div>';
+
+            // 教室使用统计
+            statsHTML += '<div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">';
+            statsHTML += '<h4 style="color: #667eea; margin-bottom: 10px;">教室使用</h4>';
+            statsHTML += `<div style="margin-bottom: 5px;">使用教室数: <strong>${analysis.used_rooms}</strong></div>`;
+            statsHTML += `<div style="margin-bottom: 5px;">总教室数: <strong>${analysis.total_rooms}</strong></div>`;
+            statsHTML += `<div style="margin-bottom: 5px;">使用率: <strong>${analysis.room_usage_rate}</strong></div>`;
+            statsHTML += '</div>';
+
+            statsHTML += '</div>';
+            document.getElementById('allocationStats').innerHTML = statsHTML;
+
+            // 已分配活动
+            let allocatedHTML = '<div style="margin-top: 15px;">';
+            result.allocated_activities.forEach((item, index) => {
+                const activity = item.activity;
+                const room = item.room;
+                allocatedHTML += `
+                    <div style="background: #e8f5e9; padding: 15px; margin-bottom: 10px; border-radius: 8px; border-left: 4px solid #4caf50;">
+                        <div style="font-weight: 600; color: #2e7d32; margin-bottom: 5px;">
+                            ${index + 1}. ${activity.activity_name}
+                        </div>
+                        <div style="color: #666; font-size: 0.9em;">
+                            类型: ${activity.activity_type} | 优先级: ${activity.priority} |
+                            时间: ${activity.start_time} - ${activity.end_time}
+                        </div>
+                        <div style="color: #666; font-size: 0.9em; margin-top: 5px;">
+                            分配教室: <strong>${room.room_name}</strong> (容量: ${room.capacity})
+                        </div>
+                    </div>
+                `;
+            });
+            allocatedHTML += '</div>';
+            document.getElementById('allocatedActivities').innerHTML = allocatedHTML;
+
+            // 未分配活动
+            let rejectedHTML = '<div style="margin-top: 15px;">';
+            if (result.rejected_activities.length === 0) {
+                rejectedHTML += '<div style="text-align: center; color: #4caf50; padding: 20px;">🎉 所有活动都已成功分配！</div>';
+            } else {
+                result.rejected_activities.forEach((activity, index) => {
+                    rejectedHTML += `
+                        <div style="background: #ffebee; padding: 15px; margin-bottom: 10px; border-radius: 8px; border-left: 4px solid #f44336;">
+                            <div style="font-weight: 600; color: #c62828; margin-bottom: 5px;">
+                                ${index + 1}. ${activity.activity_name}
+                            </div>
+                            <div style="color: #666; font-size: 0.9em;">
+                                类型: ${activity.activity_type} | 优先级: ${activity.priority} |
+                                时间: ${activity.start_time} - ${activity.end_time}
+                            </div>
+                            <div style="color: #666; font-size: 0.9em; margin-top: 5px;">
+                                所需容量: ${activity.required_capacity}
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            rejectedHTML += '</div>';
+            document.getElementById('rejectedActivities').innerHTML = rejectedHTML;
+
+            // 教室利用率
+            let utilizationHTML = '<div style="margin-top: 15px;">';
+            const utilEntries = Object.entries(result.utilization).slice(0, 10);
+            utilEntries.forEach(([roomName, util]) => {
+                if (util.usage_count > 0) {
+                    utilizationHTML += `
+                        <div style="background: #f8f9fa; padding: 15px; margin-bottom: 10px; border-radius: 8px;">
+                            <div style="font-weight: 600; color: #667eea; margin-bottom: 8px;">
+                                ${roomName} (容量: ${util.capacity})
+                            </div>
+                            <div style="color: #666; font-size: 0.9em;">
+                                使用次数: <strong>${util.usage_count}</strong> |
+                                总时长: <strong>${util.total_hours.toFixed(1)}小时</strong>
+                            </div>
+                            <div style="color: #666; font-size: 0.85em; margin-top: 5px;">
+                                活动: ${util.activities.join(', ')}
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+            utilizationHTML += '</div>';
+            document.getElementById('roomUtilization').innerHTML = utilizationHTML;
+
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        window.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

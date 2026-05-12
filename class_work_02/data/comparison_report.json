@@ -1,0 +1,26 @@
+{
+  "title": "动态规划 vs 贪心算法对比分析",
+  "algorithms": {
+    "dynamic_programming": {
+      "name": "动态规划",
+      "problem": "北邮学生选课优化问题",
+      "time_complexity": "O(n × 2^m)",
+      "space_complexity": "O(n × 2^m)",
+      "optimality": "全局最优"
+    },
+    "greedy": {
+      "name": "贪心算法",
+      "problem": "北邮教室资源分配问题",
+      "time_complexity": "O(n log n)",
+      "space_complexity": "O(n + m)",
+      "optimality": "全局最优"
+    }
+  },
+  "comparison_dimensions": [
+    "时间复杂度",
+    "空间复杂度",
+    "最优性保证",
+    "适用场景",
+    "实现难度"
+  ]
+}
